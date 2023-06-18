@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>counter_plugin</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../style/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../style/css/media.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav me-auto ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-warning ms-2" href="../annimation/index.html">Annimation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Counter -->
+    <div class="container mt-5">
+        <h2 class="c_up">Counter-Up</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="box">
+                    <p class="counter">1024</p>
+                    <p>Project</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box">
+                    <p>$ <span class="counter">900000</span></p>
+                    <p>Cost</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box">
+                    <p class="counter">300</p>
+                    <p>hours</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- counter2 -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="box2">
+                    <p>Total Student</p>
+                    <p><span class="counter2" data-count="100">0</span></p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box2">
+                    <p>Present Student</p>
+                    <p><span class="counter2" data-count="95">0</span></p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box2">
+                    <p>Absent Student</p>
+                    <p><span class="counter2" data-count="5">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- countdown -->
+        <div class="row justify-content-center">
+            <div class="col-lg-12 ">
+                <div class="text-center" id="countdown"></div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Countdown with repeat -->
+        <h2 class="Count">Countdown</h2>
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-6">
+                <button class="limit-button btn btnDate btnDate1">Countdown with limit date</button>
+                <p> <small>
+                        Countdown with limit date allows you to select the target date, and it will stop when the
+                        countdown
+                        reaches zero.
+                    </small>
+                </p>
+            </div>
+
+            <div class="col-lg-6">
+                <button class="repeat-button btn btnDate2 btnDate ">Countdown with repeat</button>
+                <p>
+                    <small>
+                        Countdown with repeat, allows you to type the number of days you want to countdown. Once the
+                        counter
+                        reaches zero it will start over.
+                    </small>
+                </p>
+            </div>
+        </div>
+
+        <div class="form">
+            <form>
+                <button class="begin btnDate3 btnDate" type="submit">Start Countdown</button>
+            </form>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-3">
+                <div class="box">
+                    <div class="number">
+                        <span id="days">
+                            00
+                        </span>
+                    </div>
+                    <span>Days</span>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="box">
+                    <div class="number">
+                        <span id="hours">
+                            00
+                        </span>
+                    </div>
+                    <span>Hours</span>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="box">
+                    <div class="number">
+                        <span id="minutes">
+                            00
+                        </span>
+                    </div>
+                    <span>Minutes</span>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="box">
+                    <div class="number">
+                        <span id="seconds">
+                            00
+                        </span>
+                    </div>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- js link -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="vendor/Counter-Up-master/jquery.counterup.min.js"></script>
+    <script src="vendor/360-Degree-Countdown/jquery.countdown360.min.js"></script>
+    <script src="vendor/repeating-countdown-timer/app.js"></script>
+    <script src="../js/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+.margin {
+    margin-top: 200px;
+}
+
+
+
+
+.c_up {
+    text-align: center;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.box {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(228, 208, 246);
+}
+
+.box p:first-child {
+    font-weight: bolder;
+    color: rgb(237, 18, 200);
+
+}
+
+.box2 {
+    width: 50%;
+    height: 130px;
+    margin: 0px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: orangered;
+    color: aliceblue;
+}
+
+/* < !-- Countdown with repeat --> */
+
+.Count {
+    text-align: center;
+    background-color: rgb(222, 194, 248);
+}
+
+.btnDate {
+    width: 100%;
+    height: 50px;
+
+}
+
+.btnDate1 {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.btnDate2 {
+    background-color: rgb(226, 43, 195);
+    color: aliceblue;
+}
+
+.btnDate3 {
+    margin-bottom: 20px;
+    background-color: rgb(87, 74, 225);
+    color: aliceblue;
+}
+
+.number {
+    width: 100%;
+    background-color: rgb(229, 93, 250);
+}
+
+.begin,
+.stop {
+    margin-bottom: 20px;
+    background-color: rgb(87, 74, 225);
+    color: aliceblue;
+}
