@@ -4,21 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Annimation</title>
+    <title>Slider_plugin</title>
 
-    <!-- wow_plugin -->
-    <link rel="stylesheet" href="vendor/wow_js/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
+    <!-- slider link -->
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+
     <!-- css link -->
     <link rel="stylesheet" href="../style/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../style/css/media.css">
 
 </head>
 
 <body>
-    <!-- Counter -->
-    <div class="container">
+    <div class="container mt-5">
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,38 +40,44 @@
                         <li class="nav-item">
                             <a class="nav-link btn btn-secondary text-white ms-3" href="../slider/index.html">slider</a>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+    <!-- slider -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper">
+                    <div class="demo">
+                        <img src="../images/g-6.jpeg" class="img-fluid" alt="slider">
+                    </div>
+                    <div class="demo">
+                        <img src="../images/g5.jpeg" class="img-fluid" alt="slider">
+                    </div>
+                    <div class="demo">
+                        <img src="../images/g4.jpeg" class="img-fluid" alt="slider">
+                    </div>
+                    <div class="demo">
+                        <img src="../images/g7.jpeg" class="img-fluid" alt="slider">
+                    </div>
+                    <div class="demo">
+                        <img src="../images/g2.jpeg" class="img-fluid" alt="slider">
+                    </div>
+                    <div class="demo">
+                        <img src="../images/g1.jpeg" class="img-fluid" alt="slider">
+                    </div>
 
-    <!-- plugin -->
-    <div class="container">
-        <h2 class="bg-warning text-center">WOW</h2>
 
-        <div class="wow slideInLeft box bg-danger" data-wow-duration="5s" data-wow-delay=".5s" data-wow-iteration="2">
+                </div>
+            </div>
         </div>
-
-        <section class="wow slideInRight box bg-primary" data-wow-duration="5s" data-wow-delay=".5s"
-            data-wow-iteration="2">
-        </section>
     </div>
 
-
-    <div class="container">
-        <h2 class="bg-warning text-center">AOS</h2>
-        <div data-aos="zoom-in" class="box bg-danger "></div>
-        <div data-aos="zoom-out" class="box bg-primary "></div>
-
-
-    </div>
     <!-- js link -->
     <script src="../js/jquery.min.js"></script>
-    <script src="vendor/wow_js/js/wow.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
     <script src="../js/bootstrap_js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 
