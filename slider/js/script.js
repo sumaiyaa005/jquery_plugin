@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // slick
   $(".wrapper").slick({
     infinite: true,
     slidesToShow: 3,
@@ -38,5 +39,12 @@ $(document).ready(function () {
       // settings: "unslick"
       // instead of a settings object
     ],
+  });
+
+  // mixitup
+  var mixer = mixitup("#whole", {
+    animation: {
+      duration: 300,
+    },
   });
 });
