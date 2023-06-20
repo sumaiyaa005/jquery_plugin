@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  // lightbox
+  lightbox.option({
+    resizeDuration: 200,
+    wrapAround: true,
+  });
+
   // slick
   $(".wrapper").slick({
     infinite: true,
