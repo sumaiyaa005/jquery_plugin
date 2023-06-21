@@ -1,3 +1,16 @@
+// swiper
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 $(document).ready(function () {
   // lightbox
   lightbox.option({
@@ -70,9 +83,5 @@ $(document).ready(function () {
         items: 5,
       },
     },
-  });
-
-  $(".some-list").simpleLoadMore({
-    item: "div",
   });
 });
