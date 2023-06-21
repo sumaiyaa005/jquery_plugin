@@ -4,22 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Annimation</title>
+    <title>Load_plugin</title>
 
-    <!-- wow_plugin -->
-    <link rel="stylesheet" href="vendor/wow_js/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
-    <!-- owl plugin -->
+    <!-- slider link -->
+
     <!-- css link -->
     <link rel="stylesheet" href="../style/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../style/css/media.css">
 
 </head>
 
 <body>
-    <!-- Counter -->
-    <div class="container">
+    <div class="container mt-5">
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,11 +42,11 @@
                             <a class="nav-link btn btn-success text-white ms-3" href="../cruve_text/index.html">Cruv
                                 text</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link btn btn-primary text-white ms-3"
                                 href="../parallax/index.html">parallax</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link btn btn-success text-white ms-3"
                                 href="../load_more/index.html">Loader</a>
@@ -60,36 +56,45 @@
                                 href="../interactive_parallax/index.html">Intarective_p</a>
                         </li>
 
+
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- plugin -->
-    <div class="container">
-        <h2 class="bg-warning text-center">WOW</h2>
-
-        <div class="wow slideInLeft box bg-danger" data-wow-duration="5s" data-wow-delay=".5s" data-wow-iteration="2">
+    <!-- load more -->
+    <section class="container">
+        <div class="some-list mt-5">
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 1</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 2</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 3</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 4</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 5</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 6</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 7</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 8</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 9</div>
+            <div class="bg-primary text-white p-2 mb-3">Some List Item 10</div>
         </div>
+    </section>
 
-        <section class="wow slideInRight box bg-primary" data-wow-duration="5s" data-wow-delay=".5s"
-            data-wow-iteration="2">
-        </section>
-    </div>
+    <!-- preloader -->
 
+    <section class="container">
+        <div class="preloader js-preloader flex-center">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
-        <h2 class="bg-warning text-center">AOS</h2>
-        <div data-aos="zoom-in" class="box bg-danger "></div>
-        <div data-aos="zoom-out" class="box bg-primary "></div>
-
-
-    </div>
     <!-- js link -->
     <script src="../js/jquery.min.js"></script>
-    <script src="vendor/wow_js/js/wow.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="vendor/static-load-more/jquery.simpleLoadMore.min.js"></script>
+    <script src="vendor/preloader/dist/js/jquery.preloadinator.min.js"></script>
     <script src="../js/bootstrap_js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 

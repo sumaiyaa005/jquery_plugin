@@ -6,3 +6,8 @@ body {
     height: 250px;
     width: 98%;
 }
+
+.item img {
+    height: 180px;
+
+}

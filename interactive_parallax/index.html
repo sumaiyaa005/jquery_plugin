@@ -1,25 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Annimation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <title>jQuery.parallax</title>
+    <script>document.documentElement.className = 'js';</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- Force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <!-- wow_plugin -->
-    <link rel="stylesheet" href="vendor/wow_js/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
-    <!-- owl plugin -->
+
+
+    <link rel="stylesheet" href="css/jquery.parallax.css" />
     <!-- css link -->
     <link rel="stylesheet" href="../style/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../style/css/media.css">
+
+
+    <style type="text/css" media="screen, projection">
+        .parallax-viewport {
+            width: 100%;
+            max-width: 60em;
+            height: 20em;
+            background-color: #aebcc9;
+        }
+    </style>
 
 </head>
 
 <body>
-    <!-- Counter -->
-    <div class="container">
+
+    <div class="container mt-5">
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,15 +59,16 @@
                             <a class="nav-link btn btn-success text-white ms-3" href="../cruve_text/index.html">Cruv
                                 text</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link btn btn-primary text-white ms-3"
                                 href="../parallax/index.html">parallax</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link btn btn-success text-white ms-3"
                                 href="../load_more/index.html">Loader</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link btn btn-danger text-white ms-3"
                                 href="../interactive_parallax/index.html">Intarective_p</a>
@@ -66,33 +80,40 @@
         </nav>
     </div>
 
-    <!-- plugin -->
-    <div class="container">
-        <h2 class="bg-warning text-center">WOW</h2>
+    <div class="site_wrap wrap container mt-5">
 
-        <div class="wow slideInLeft box bg-danger" data-wow-duration="5s" data-wow-delay=".5s" data-wow-iteration="2">
+        <div class="parallax-viewport" id="parallax">
+
+            <!-- parallax layers -->
+            <div class="parallax-layer" style="width:860px; height:273px;">
+                <img src="images/parallax_sketch/0_sun.png" alt="" style="position:absolute; left:300px; top:-12px;" />
+            </div>
+            <div class="parallax-layer" style="width:920px; height:274px;">
+                <img src="images/parallax_sketch/1_mountains.png" alt="" />
+            </div>
+            <div class="parallax-layer" style="width:1100px; height:284px;">
+                <img src="images/parallax_sketch/2_hill.png" alt="" style="position:absolute; top:40px; left:0;" />
+            </div>
+            <div class="parallax-layer" style="width:1360px; height:320px;">
+                <img src="images/parallax_sketch/3_wood.png" alt="" style="position:absolute; top:96px; left:0;" />
+            </div>
         </div>
-
-        <section class="wow slideInRight box bg-primary" data-wow-duration="5s" data-wow-delay=".5s"
-            data-wow-iteration="2">
-        </section>
     </div>
 
 
-    <div class="container">
-        <h2 class="bg-warning text-center">AOS</h2>
-        <div data-aos="zoom-in" class="box bg-danger "></div>
-        <div data-aos="zoom-out" class="box bg-primary "></div>
-
-
-    </div>
-    <!-- js link -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="vendor/wow_js/js/wow.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="js/jquery.event.frame.js"></script>
+    <script src="js/jquery.parallax.js"></script>
     <script src="../js/bootstrap_js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#parallax .parallax-layer')
+                .parallax({
+                    mouseport: jQuery('#parallax')
+                });
+        });
+    </script>
 </body>
 
 </html>
